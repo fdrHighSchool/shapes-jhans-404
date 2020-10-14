@@ -2,12 +2,11 @@ import java.util.*;
 
 public class Shapes{
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
 
-    System.out.print("Enter the side length: ");
-    double side = input.nextDouble();
+    double volume = cube(4);
 
-    square(side);
+    System.out.println("Cube volume: " + volume);
+
   }//end main method
 
   /*
@@ -21,9 +20,12 @@ public class Shapes{
     double a = s * s;
 
     //generate some output
-    System.out.println("A square with side " + s + " has an area of " + a);
+    //System.out.println("A square with side " + s + " has an area of " + a);
 
     return a;
   }//close square method
 
+  public static double cube(double s){
+    return(s * square(s));
+  }//end cube method
 }//end class
