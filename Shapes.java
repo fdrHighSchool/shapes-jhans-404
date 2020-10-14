@@ -14,14 +14,16 @@ public class Shapes{
    * N: square
    * P: to calculate the area of any square
    * I: a side measure (double)
-   * R:
+   * R: the area
    */
-  public static void square(double s){
+  public static double square(double s){
     //area = side times side
     double a = s * s;
 
     //generate some output
     System.out.println("A square with side " + s + " has an area of " + a);
+
+    return a;
   }//close square method
 
 }//end class
